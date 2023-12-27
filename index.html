@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class=" ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tailwind  -->
+    <script src="/3.4.0"></script>
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="/swipper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body class="capitalize text-white tracking-wider bg-slate-800 ">
+    <!-- start header -->
+    <header class=" bg-slate-900  fixed top-0 left-0 w-full z-50" id="header">
+        <nav class="container mx-auto relative h-14 flex justify-between items-center">
+
+            <!-- logo -->
+            <div>
+                <a class=" font-serif  ml-10   text-2xl cursor-pointer">BUR<span class="text-yellow-500 ">GER
+                    </span>
+                </a>
+            </div>
+
+            <!-- links -->
+            <div class=" hidden absolute top-0 left-0 w-full py-14 border  border-orange-500 
+                md:block md:static md:py-0 md:border-none md:w-auto   md:ml-auto " id="menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row ">
+                    <li>
+                        <a href="#home"
+                            class=" nav__link  hover:text-yellow-500 ease-in duration-200 close_class">Home</a>
+
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class=" nav__link  text-white hover:text-yellow-500 ease-in duration-200 close_class">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#m"
+                            class="nav__link  text-white hover:text-yellow-500 ease-in duration-200 close_class">menu</a>
+
+                    </li>
+                    <li>
+                        <a href="#review"
+                            class=" nav__link  text-white hover:text-yellow-500 ease-in duration-200 close_class">review</a>
+
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class=" nav__linkhover:text-yellow-500 ease-in duration-200 close_class">contact</a>
+
+                    </li>
+                </ul>
+                <!-- close btn -->
+                <div class="absolute top-[-.01rem] right-4 text-2xl cursor-pointer md:hidden" id="close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="theme-toggle"></i>
+
+                <div id="hamburger">
+                    <i class="ri-menu-line cursor-pointer mr-5 text-xl md:hidden"></i>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- start home -->
+    <section id="home" class="pt-16 pb-4 md:pt-20 ">
+        <div class="container mx-auto flex   flex-col  items-center gap-10 md:flex-row">
+            <div class="mx-auto md:basis-1/2 lg:basis-2/5 ">
+                <img src="/img/home-image.png" alt="home image" class="w-60  md:w-full lg:w-96 home__image">
+            </div>
+
+            <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5  home__content">
+                <h1 class="text-4xl font-serif font-bold uppercase lg:text-6xl">Happy TUMMY WITH TASTY BURGER</h1>
+                <div class="w-28 h-[2px] bg-yellow-500 my-5 mx-auto md:mx-0"></div>
+                <p class="text-gray-50 text-xs leading-5 md:text-[14px]">
+                    juicy burgers. That's what snow's Kitchen is all about and we love
+                    it! Our favorite is the 'Smokehouse BBQ' which is loaded with beef bacon, fried onions, and
+                    hickory
+                    BBQ sauce. Service is good but can be a bit slow during weekends and peak hours.
+                    Love nachos and
+                    want something different? Go for Snow's Nacho Burger' - you will not regret it. For many, this is
+                    the absolute king of burgers in Egypt .
+                </p>
+
+                <div class="text-base flex justify-center items-center  gap-4 py-10 md:justify-start md:gap-20 ">
+                    <div class="text-center md:flex md:flex-1">
+                        <i class="ri-restaurant-fill text-yellow-500  text-4xl "></i>
+                        <br />
+                        Delicious
+                    </div>
+
+                    <div class="text-center md:flex md:flex-1 ">
+                        <i class="ri-drop-fill text-yellow-500 text-4xl"></i>
+                        <br />
+                        Fresh
+                    </div>
+
+                    <div class="text-center md:flex md:flex-1">
+                        <i class="ri-restaurant-2-fill text-yellow-500 text-4xl"></i>
+                        <br />
+                        Delicious
+                    </div>
+
+                </div>
+                <div class="md:flex md:relative md:justify-center">
+                    <a href="#"
+                        class="inline-block text-sm py-3 px-8  text-center cursor-pointer rounded-md text-black bg-yellow-500 hover:opacity-75  ease-linear duration-200    ">Learn
+                        More</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- start category -->
+    <section class="" id="category">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 container mx-auto">
+
+            <!-- card 1 -->
+            <div class=" grid grid-cols-2 col-span-1  bg-yellow-500 rounded-lg py-3 category__card ">
+                <div class="col-span-1 ">
+                    <img src="/img/burger-1.png" alt="" width="100px" class="w-28  -bottom-4 -left-4">
+                </div>
+                <div class="col-span-1 mb-2">
+                    <h1 class="font-bold text-3xl">food</h1>
+                    <p>juicy fresh burger</p>
+                    <a href="" class="text-black  inline-flex  items-center">Buy
+                        online</a>
+
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class=" grid grid-cols-2 col-span-1  bg-red-700 rounded-lg py-3 category__card">
+                <div class="col-span-1 ">
+                    <img src="/img/snack-1.png" alt="" width="100px" class="w-28  -bottom-4 -left-4">
+                </div>
+                <div class="col-span-1 mb-2">
+                    <h1 class="font-bold text-3xl">snacks</h1>
+                    <p>Wonderful Snacks </p>
+                    <a href="" class=" text-yellow-300 inline-flex rounded-lg  items-center">Buy
+                        online</a>
+
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class=" grid grid-cols-2 col-span-1 rounded-lg bg-green-700  py-3 category__card ">
+                <div class="col-span-1 ">
+                    <img src="/img/beverage-2.png" alt="" width="100px" class="w-28  -bottom-4 -left-4">
+                </div>
+                <div class="col-span-1 mb-2">
+                    <h1 class="font-bold text-3xl">drink</h1>
+                    <p> fresh juice</p>
+                    <a href="" class="text-yellow-300 inline-flex   items-center">Buy
+                        online</a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end category -->
+
+    <!-- promo section start -->
+    <section id="promo" class="pt-16 pb-4 md:pt-20">
+
+        <div class="  container mx-auto grid grid-cols-1 md:grid-cols-2  gap-5 md:mx-auto ">
+            <!-- card 1 -->
+            <div
+                class="bg-slate-900 rounded-lg dark:bg-slate-900  p-5 md:flex-row md:items-center lg:flex-row-reverse lg-:flex-1  promo__card-1">
+                <img src="/img/promo-1.png" alt="" class="w-40 mx-auto hover:animate-bounce md:mx-5">
+                <div class="space-y-2 pt-5 md:pt-0">
+                    <p class="text-xs text-yellow-500">payday promo</p>
+
+                    <h3 class="txet-xl font-serif font-bold uppercase lg:text-6xl">get a 10% discount on payday week
+                    </h3>
+                    <p class="text-xs md:text-lg">Crispy Onion Rings, Topped With Semi Dijon Mustard, Creamy Buffalo
+                        Sauce, And
+                        Cheddar cheese</p>
+                    <a href="#" class="text-xs text-yellow-500">Buy online</a>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+
+            <div
+                class="bg-slate-900 rounded-lg dark:bg-slate-900  p-5 md:flex-row md:items-center lg:flex-row-reverse lg-:flex-1  promo__card-2">
+                <img src="/img/promo-2.png" alt="" class="w-40 mx-auto hover:animate-bounce md:mx-5">
+                <div class="space-y-2 pt-5 md:pt-0">
+                    <p class="text-xs text-yellow-500">payday promo</p>
+
+                    <h3 class="txet-xl font-serif font-bold uppercase lg:text-6xl">get a 10% discount on payday week
+                    </h3>
+                    <p class="text-xs md:text-lg">
+                        imagine what the future tastes and feels like with a limited edition drink</p>
+                    <a href="#" class="text-xs text-yellow-500">Buy online</a>
+                </div>
+            </div>
+
+
+            <div class""></div>
+        </div>
+
+    </section>
+    <!-- promo end -->
+
+    <!-- about section -->
+    <section id="about">
+        <div class="container mx-auto flex flex-col gap-10 lg:flex-row">
+            <div class="flex-1 about__img">
+                <img src="img/about.jpg" alt="" class="rounded-lg lg:self-center">
+            </div>
+            <div class="flex-1 about__content">
+
+                <h2 class="font-bold text-3xl font-serif lg:text:6xl"> FIND FOOD AND DRINKS, ALL-IN PLACE FOR YOUR
+                    BEST TASTE</h2>
+                <div class="w-28 h-[2px] bg-yellow-500 my-5 mx-auto md:mx-auto "></div>
+                <p class="text-sm font-semibold leading-loose">Sautéed mushroom, cheddar cheese, and creamy mayonnaise
+                    spread
+                    on
+                    top of our pure
+                    beef burger
+                    patty,
+                    beef Bacon With Fresh Sautéed Mushroom, Cheddar Cheese, And Creamy Mayonnais,Pure beef burger patty,
+                    topped with our signature Buffalo sauce and cheddar cheese..</p>
+                <ul class="grid grid-cols-2 py-5 space-y-1">
+                    <li class="text-xs  "> <i class="ri-check-line text-yellow-500"></i> best price</li>
+                    <li class="text-xs  "> <i class="ri-check-line text-yellow-500"></i> fresh ingredient</li>
+                    <li class="text-xs  "> <i class="ri-check-line text-yellow-500"></i> best Service</li>
+                    <li class="text-xs  "> <i class="ri-check-line text-yellow-500"></i> health protocol</li>
+
+                </ul>
+                <a href=""
+                    class="  inline-flex  text-sm py-3 px-8  text-center cursor-pointer rounded-md text-black bg-yellow-500 hover:opacity-75  ease-linear duration-200">About
+                    us</a>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- menu start -->
+    <section id="m" class="my-20">
+        <div class="container mx-auto">
+            <!-- buttons -->
+            <div class="max-w-md mx-auto text-center">
+                <h2 class="text-4xl font-bold uppercase">our best menu </h2>
+                <div class="w-28 h-[2px] bg-yellow-500 my-5 mx-auto "></div>
+
+                <div class="tabs_wrap">
+                    <ul class="flex flex-wrap justify-center gap-3 py-10 menu__items">
+                        <li data-tabs="all"
+                            class="active inline-flex  text-sm py-3 px-8  text-center cursor-pointer rounded-md text-white border border-slate-800 border-b-orange-700    ease-linear duration-200">
+                            All</li>
+                        <li data-tabs="food"
+                            class="inline-flex  text-sm py-3 px-8  text-center cursor-pointer rounded-md text-white border border-slate-800 border-b-orange-700   ease-linear duration-200 ">
+                            FOOD</li>
+                        <li data-tabs="snack"
+                            class="inline-flex  text-sm py-3 px-8  text-center cursor-pointer rounded-md text-white border border-slate-800 border-b-orange-700    ease-linear duration-200">
+                            SNACK</li>
+                        <li data-tabs="beverage"
+                            class="inline-flex  text-sm py-3 px-8  text-center cursor-pointer rounded-md text-white border  border-slate-800 border-b-orange-700    ease-linear duration-200">
+                            BEVERAGE</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="md:flex md:relative">
+
+                <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 menu__items ">
+                    <!-- food -->
+
+                    <li class="item_wrap food col-span-1">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40 dark:hover:bg-yellow-500">
+                            <img src="img/burger-1.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase"> beef burger</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold">Crispy Onion Rings, Topped
+                                    With Semi Dijon Mustard, Creamy Buffalo Sauce, And Cheddar Cheese</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap food col-span-1 grid-cols-2">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40 col-span-1">
+                            <img src="img/burger-2.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5 col-span-1">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase"> beef burger</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold">Crispy Onion Rings, Topped
+                                    With Semi Dijon Mustard, Creamy Buffalo Sauce, And Cheddar Cheese</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <li class="item_wrap food col-span-1 ">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-3.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase"> beef burger</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold">Crispy Onion Rings, Topped
+                                    With Semi Dijon Mustard, Creamy Buffalo Sauce, And Cheddar Cheese</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap food col-span-1 ">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-4.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase"> beef burger</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold">Crispy Onion Rings, Topped
+                                    With Semi Dijon Mustard, Creamy Buffalo Sauce, And Cheddar Cheese</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap food  ">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-5.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase"> beef burger</h4>
+                                <p class="text-sm font-semibold leading-loose ">Crispy Onion Rings, Topped
+                                    With Semi Dijon Mustard, Creamy Buffalo Sauce, And Cheddar Cheese</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <!-- snack -->
+
+                    <li class="item_wrap snack ">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-1.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">Frensh Fries</h4>
+                                <p class="text-sm font-semibold leading-loose "> fresh Crispy french</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap snack">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-2.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">Frensh Fries</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh Crispy french</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap snack">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-3.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">Keto Shiitake</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> Sautéed fresh mushroom,
+                                    cheddar cheese</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap snack">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-4.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">frinsh fries</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh chips</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap snack">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-5.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">Frensh Fries</h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh Crispy french whith
+                                    ketchup</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <li class="item_wrap snack">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-6.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">pop corn </h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh pop corn</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <!-- beverage -->
+
+
+                    <li class="item_wrap beverage ">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40 relative overflow-hidden">
+                            <img src="img/beverage-1.png" alt=""
+                                class=" w-48 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24 absolute bottom-1">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">Banana Juice </h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh Banana Juice</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <li class="item_wrap beverage">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-2.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">rainbow sherbet </h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh rainbow sherbet</p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                    <li class="item_wrap beverage">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-3.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">pomegranate juice </h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh pomegranate juice
+                                </p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <li class="item_wrap beverage">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-4.png" alt=""
+                                class="w-32 hover:scale-110 ease-linear duration-200  md:w-40 lg:w-24 absolute  ">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">orange juice </h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh orange juice
+                                </p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+
+                    <li class="item_wrap beverage">
+                        <div
+                            class="h-56 grid  place-items-center bg-slate-900 rounded-3xl hover:bg-yellow-500 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-5.png" alt=""
+                                class="w-40 hover:scale-110 ease-linear duration-200  md:w-48 lg:w-24">
+                        </div>
+
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="text-4xl font-bold uppercase">carrot juice </h4>
+                                <p class="text-sm font-semibold leading-loose font-semibold"> fresh carrot juice
+                                </p>
+                            </div>
+
+                            <p class="text-yellow-500">$7.99</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- menu end -->
+
+    <!-- review section -->
+    <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
+        <div class="customer__review container mx-auto">
+            <div class="max-w-md mx-auto text-center">
+                <h2 class="section__title">CUSTOMER REVIEW</h2>
+                <div class="w-28 h-[2px] bg-yellow-500 my-5 mx-auto"></div>
+
+            </div>
+
+            <div class="swiper py-10">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide bg-slate-900">
+                        <div class="flex flex-col gap-5  dark:bg-darkColor rounded-lg p-6">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                                culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                            <div class="flex items-center">
+                                <img src="img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">John doe</p>
+                                    <p class="paragraph">Designer</p>
+                                </div>
+                                <i class=" text-4xl ri-chat-quote-fill text-yellow-500 ml-auto"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide bg-slate-900">
+                        <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                                culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                            <div class="flex items-center">
+                                <img src="img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">John doe</p>
+                                    <p class="paragraph">Designer</p>
+                                </div>
+                                <i class="ri-chat-quote-fill text-yellow-500 text-4xl  ml-auto"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide bg-slate-900">
+                        <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                                culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                            <div class="flex items-center">
+                                <img src="img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">John doe</p>
+                                    <p class="paragraph">Designer</p>
+                                </div>
+                                <i
+                                    class="ri-chat-quote-fill text-yellow-500 text-4xl ri-chat-quote-fill text-yellow-500 ml-auto"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide bg-slate-900">
+                        <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                                culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                            <div class="flex items-center">
+                                <img src="img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">John doe</p>
+                                    <p class="paragraph">Designer</p>
+                                </div>
+                                <i class=" text-4xl ri-chat-quote-fill text-yellow-500 ml-auto"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide bg-slate-900">
+                        <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                                culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                            <div class="flex items-center">
+                                <img src="img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">John doe</p>
+                                    <p class="paragraph">Designer</p>
+                                </div>
+                                <i class="ri-chat-quote-fill text-yellow-500 text-4xl  ml-auto"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end review section -->
+
+    <!-- contact section -->
+
+    <section class="my-20 bg-yellow-500 py-16 relative" id="contact">
+        <div class="container mx-auto flex flex-col gap-5 md:items-center md:flex-row ">
+            <div class="space-y-4 md:flex-1">
+                <h2 class="text-4xl text-slate-700 font-bold serif ml-5"> GET EXCLUSIVE UPDATE</h2>
+                <p class="text-3xl text-slate-600 serif ml-5 "> to keep on </p>
+            </div>
+
+
+            <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                <input type="email" placeholder="Email Address " id="input"
+                    class="p-2 text-slate-700 font-bold outline-none rounded-lg md:w-full">
+                <small class="mx-auto text-red-500 hidden md:mt-2 underline cursor-pointer font-bold" id="hidden">
+                    again</small>
+
+                <button
+                    class="flex items-center justify-center gap-2 bg-black px-5 py-3 rounded-lg  mr-5 cursor-pointer hover:opacity-90 "
+                    id="btn">
+                    <i class="ri-send-plane-line"></i>
+
+                    Subscribe</button>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+    <!-- contact section end-->
+
+    <!-- footer section -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <ul class="grid grid-cols-1  gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+                <li class="col-span-1">
+                    <div class="space-y-3 text-3xl">
+                        <h3 class="font-bold ml-10"> BUR<span class="text-yellow-500">GER</span></h3>
+                        <p class="semibold text-lg ml-10">welcome to Burger</p>
+                    </div>
+                </li>
+
+                <li class="col-span-1">
+                    <div class=" flex flex-col gap-3 >
+                    <h3 class=" texr-lg uppercase font-serif ml-10">
+                        support
+                        </h3>
+                        <a href="" class="text-xs hover:text-yellow-500 ml-5">FAQ'S</a>
+                        <a href="" class="text-xs hover:text-yellow-500 ml-5">privacy policy</a>
+                        <a href="" class="text-xs hover:text-yellow-500 ml-5">term & condition</a>
+                        <a href="" class="text-xs hover:text-yellow-500 ml-5">contact</a>
+                    </div>
+                </li>
+                <!-- email ,phone -->
+                <li class="spca-y-8 ml-5">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-serif ml-5">phone</h3>
+                        <p class="flex items-center gap-2 text-lg">
+                            <i class="ri-phone-line text-yellow-500"></i>
+                            01060257232
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-serif">email</h3>
+                        <p class="flex items-center gap-2 text-lg">
+                            <i class="ri-mail-send-fill text-yellow-500"></i>
+                            ahmedha258258@gmail.com
+                        </p>
+                    </div>
+                </li>
+
+
+                <!-- Adress ,social -->
+                <li class="spca-y-8 col-span- ">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-serif ml-5">Adress</h3>
+                        <p class="flex items-center gap-2 text-lg">
+                            <i class="ri-map-pin-add-line text-yellow-500 text-lg ml-5"></i>
+                            Assiut
+                        </p>
+                    </div>
+
+                    <div class="space-y-2 ml-5">
+                        <h3 class="text-lg uppercase font-serif">follow me</h3>
+                        <p class="flex items-center gap-2 text-lg">
+                            <i class="ri-facebook-fill text-yellow-500 text-lg  cursor-pointer hover:scale-125"></i>
+                            <i class="ri-instagram-fill text-yellow-500 text-lg cursor-pointer hover:scale-125"></i>
+                            <i class="ri-twitter-fill text-yellow-500 text:lg cursor-pointer hover:scale-125"></i>
+
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="flex flex-col items-center border-t border-slate-900 py-5 md:flex-row md:justify-between">
+                <p class="text-xs font-semibold mx-auto">Burger By snow</p>
+                <p class="text-xs font-semibold mx-auto"> copyright &copy; 2023 all rights reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- scroll up button -->
+    <a href="#" id="scroll-up"
+        class="fixed right-4 bottom-4 bg-yellow-500  inline-block shadow-sm px-4 py-2 rounded-full text-lg text-black z-50 hover:-translate-y-1  ease-induration-200 "><i
+            class="ri-arrow-up-line"></i></a>
+
+    <!-- footer section end -->
+
+
+
+    <!-- modal -->
+    <div class="modal fixed z-10 left-0 top-0  overflow-auto bg-transparent hidden    " id="showModal">
+        <div class=" bg-slate-900 p-70 m-32 rounded-lg w-52 h-48   container mx-auto ">
+            <div class="relative">
+                <p class="text-3xl  right-1 absolute cursor-pointer" id="closeModal">&times; </p>
+                <br><br><br>
+            </div>
+            <p class="  top-[50%] text-center text-yellow-500 font-bold text-lg ">send succefully
+                🫡 </p>
+        </div>
+
+    </div>
+
+    <!-- scroll reveal -->
+    <script src="scrollreveal.js"></script>
+    <!-- /swiper -->
+    <script src="swipper/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
